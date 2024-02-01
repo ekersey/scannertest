@@ -16,9 +16,11 @@ input {
 
 textarea {
     display: block;
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
+	white-space: pre;
+	overflow-wrap: normal;
+	overflow-x: scroll;
 }
 
 button {

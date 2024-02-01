@@ -15,13 +15,13 @@
 
         <h1>Scanner Input Testing</h1>
 
-        <input placeholder="Click here, then scan." size="40" />
+        <input id="input" placeholder="Click here, then scan." size="40" autofocus />
         <br>
         <div style="text-align:center">
-            <button id="reset">RESET</button>
+            <input type="button" value="Clear" onclick="javascript:eraseText();">
         </div>
         <br>
-        <textarea id="log" readonly="readonly" rows="20"></textarea>
+        <textarea id="log" readonly="readonly" rows="20" cols="90"></textarea>
 
     </body>
         
