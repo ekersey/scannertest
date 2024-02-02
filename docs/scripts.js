@@ -13,6 +13,7 @@ function logKeyUp(e) {
 		startTimes[e.code] = null;
 	}
   log.textContent += e.code + " UP; " + " key: '" + e.key + "', ctrl: " + e.ctrlKey + ", alt: " + e.altKey + ", shift: " + e.shiftKey + ", meta: " + e.metaKey + ", repeat: " + e.repeat + ", keyCode: " + e.keyCode + (elapsed ? ", elapsed: " + elapsed + "ms" : "") + "\r\n";
+  console.log(e);
 }
 
 function logKeyDown(e) {
@@ -22,6 +23,7 @@ function logKeyDown(e) {
 	  }
   }
   log.textContent += e.code + " DOWN; " + " key: '" + e.key + "', ctrl: " + e.ctrlKey + ", alt: " + e.altKey + ", shift: " + e.shiftKey + ", meta: " + e.metaKey + ", repeat: " + e.repeat + ", keyCode: " + e.keyCode + "\r\n";
+  console.log(e);
 }
 
 function eraseText() {
